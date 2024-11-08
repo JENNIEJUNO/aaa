@@ -29,7 +29,9 @@ const Homepage = () => {
             containerClass="carousel-container"
             responsive={responsive}
         >
-            <div className="home">이것은 창업</div>
+            <div className="home">
+                <img src="/aaa.png" style={{width:"200px"}}/>
+            </div>
             <div className="workplace">직업</div>
             <div className="tourism">관광</div>
             <div className="taxi">택시</div>
