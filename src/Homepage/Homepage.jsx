@@ -3,6 +3,11 @@ import './Homepage.style.css'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
+import Home from '../Pages/Home/Home';
+import Qr from '../Pages/Qr/Qr';
+import Taxi from '../Pages/Taxi/Taxi';
+import Tourism from '../Pages/Tourism/Tourism';
+import Workplace from '../Pages/Workplace/Workplace';
 
 const Homepage = () => {
     const keyword = ['home', 'workplace', 'tourism', 'taxi']
@@ -29,12 +34,11 @@ const Homepage = () => {
             containerClass="carousel-container"
             responsive={responsive}
         >
-            <div className="home">
-                <img src="/aaa.png" style={{width:"200px"}}/>
-            </div>
-            <div className="workplace">직업</div>
-            <div className="tourism">관광</div>
-            <div className="taxi">택시</div>
+          <Qr/>
+          <Home />
+          <Taxi />
+          <Tourism />
+          <Workplace />
         </Carousel>
   )
 }
