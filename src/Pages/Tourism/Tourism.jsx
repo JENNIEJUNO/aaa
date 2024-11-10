@@ -3,7 +3,7 @@ import styles from './Tourism.module.css'
 import { useNavigate } from 'react-router-dom'
 
 const Tourism = () => {
-    const [text, setText] = useState('관관을 소개하는 문장')
+    const [text, setText] = useState('관광을 소개하는 문장')
     const [goToMenu, setGoToMenu] = useState('메뉴로 이동 ->')
     const country = {
         Thailand:{
