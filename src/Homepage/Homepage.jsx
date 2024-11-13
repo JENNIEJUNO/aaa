@@ -8,6 +8,7 @@ import Qr from '../Pages/Qr/Qr';
 import Taxi from '../Pages/Taxi/Taxi';
 import Tourism from '../Pages/Tourism/Tourism';
 import Workplace from '../Pages/Workplace/Workplace';
+import Kakao from '../Pages/Kakao/Kakao';
 
 const Homepage = () => {
     const keyword = ['home', 'workplace', 'tourism', 'taxi']
@@ -39,6 +40,7 @@ const Homepage = () => {
           <Taxi />
           <Tourism />
           <Workplace />
+          <Kakao />
         </Carousel>
   )
 }
