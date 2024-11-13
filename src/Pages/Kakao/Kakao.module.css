@@ -1,7 +1,10 @@
 .kakao{
-    background-color:white;
+    background-color:yellow;
     height:100%;
     display:flex;
     justify-content:center;
     align-items:center;
+}
+.kakao img{
+    width:200px;
 }
