@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import styles from './Home.module.css'
 import { useNavigate } from 'react-router-dom'
-import { country } from './Country'
+import { country } from './Object'
 
 const Home = () => {
     const [text, setText] = useState('집을 소개하는 문장')

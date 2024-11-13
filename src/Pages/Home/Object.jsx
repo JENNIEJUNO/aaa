@@ -1,3 +1,4 @@
+//국기 누르면 번역
 export const country = {
     Thailand:{
         name:"thailand",
@@ -16,5 +17,16 @@ export const country = {
         img:"https://i.namu.wiki/i/iHFjVQ4YlFtJtSJTmjiwH-8U7FNF75Ee_TUSfKDKxc-0mAkEIvBucY6WpxYZ2BQRhZwQOZZ1X2tUviGgVfuv0Q.webp",
         text:"Pangungusap na nagpapakilala sa bahay",
         menuText:"Pumunta sa menu ->",
+    }
+}
+
+// HomeMenu
+export const meun = {
+    강남:{
+        keyword:"수원 원룸 25 30만원",
+        price:"",
+        img:"",
+        floorSpace:"",
+
     }
 }
