@@ -20,7 +20,7 @@ const HomeMenu = () => {
   return (
     <div className={styles.homeMenu}>
       <div className={styles.homeSearch}>
-        <input type="text" placeholder='지역, 월세, 평수 ' value={keyword} onChange={(event) => handleChange(event)}/>
+        <input style={{width:"135px"}} type="text" placeholder='지역, 월세, 평수 ' value={keyword} onChange={(event) => handleChange(event)}/>
         <button onClick={findToKeyword}>click</button>
       </div>
         <ul>
