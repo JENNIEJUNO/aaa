@@ -29,8 +29,8 @@ const HomeMenu = () => {
               <img src={item.img} />
               <div>
                 <div style={{fontWeight:"700"}}>{item.price}</div>
-                <div>{item.floorSpace}</div>
-                <div style={{fontSize:"12px"}}>{item.address}</div>
+                <div style={{fontSize:"13px"}}>{item.floorSpace}</div>
+                <div style={{fontSize:"10px"}}>{item.address}</div>
               </div>
             </li>
           ))}
