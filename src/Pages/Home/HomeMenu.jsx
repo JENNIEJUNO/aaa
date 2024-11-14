@@ -3,8 +3,6 @@ import styles from './Home.module.css'
 import { menu } from './Object'
 
 const HomeMenu = () => {
-  const a = Object.keys(menu)
-  console.log(a)
   return (
     <div className={styles.homeMenu}>
       <div className={styles.homeSearch}>
@@ -12,10 +10,14 @@ const HomeMenu = () => {
         <button>click</button>
       </div>
         <ul>
-          {a.map((item) => (
+          {menu.map((item) => (
             <li>
-              <div><img src={menu[item].img} /></div>
-              <div>{menu[item].name}</div>
+              <img src={item.img} />
+              <div>
+                <div style={{fontWeight:"700"}}>{item.price}</div>
+                <div>{item.floorSpace}</div>
+                <div style={{fontSize:"12px"}}>{item.address}</div>
+              </div>
             </li>
           ))}
         </ul>
