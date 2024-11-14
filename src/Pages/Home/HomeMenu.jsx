@@ -1,17 +1,23 @@
 import React from 'react'
 import styles from './Home.module.css'
-import { meun } from './Object'
+import { menu } from './Object'
 
 const HomeMenu = () => {
+  const a = Object.keys(menu)
+  console.log(a)
   return (
     <div className={styles.homeMenu}>
+      <div className={styles.homeSearch}>
+        <input type="text" />
+        <button>click</button>
+      </div>
         <ul>
-            집 관련 메뉴
-            <li>1</li>
-            <li>1</li>
-            <li>1</li>
-            <li>1</li>
-            <li>1</li>
+          {a.map((item) => (
+            <li>
+              <div><img src={menu[item].img} /></div>
+              <div>{menu[item].name}</div>
+            </li>
+          ))}
         </ul>
     </div>
   )

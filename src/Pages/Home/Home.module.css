@@ -34,18 +34,34 @@
 .homeMenu{
     background-color:green;
     height:100vh;
+    display:flex;
+    align-items:center;
 }
 .homeMenu > ul{
     width:100%;
-    height:100%;
+    height:300px;
     display:flex;
     flex-direction:column;
     justify-content:center;
     align-items:center;
     font-size:30px;
     font-weight:700;
+    background-color:red;
+    list-style:none;
 }
 .homeMenu > ul > li{
     font-size:16px;
     margin:8px;
+}
+.homeSearch{
+    margin:10px;
+    position:absolute;
+    top:0;
+    right:0;
+    z-index:1;
+}
+.homeSearch button{
+    cursor: pointer;
+    margin-left:5px;
+    font-weight:700;
 }
