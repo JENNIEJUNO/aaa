@@ -47,19 +47,41 @@
     background-color:white;
     list-style:none;
     overflow-y:scroll;
+    border-radius:10px;
+}
+.homeMenu > ul::-webkit-scrollbar {
+    width: 10px; /* 스크롤바 너비 설정 */
+    border-radius: 10px;
+}
+
+.homeMenu > ul::-webkit-scrollbar-track {
+    background: transparent; /* 스크롤바 트랙 배경색 */
+    border-radius: 10px;
+}
+
+.homeMenu > ul::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 0, 0, 0.3); /* 스크롤바 색상 */
+    border-radius: 10px;
+    border: 2px solid white; /*스크롤바와 내용 사이 여백을 위해 사용 */
 }
 .homeMenu > ul > li{
     display:flex;
     padding:20px;
+    border-bottom:1px solid black;
+}
+.homeMenu > ul > li:last-child {
+    border-bottom: none;
 }
 .homeMenu li > img{
     width:120px;
     height:100px;
+    margin-right:5px;
     border-radius:10px;
 }
 .homeMenu li > div{
     width:120px;
     height:100px;
+    margin-left:5px;
     display:flex;
     flex-direction:column;
     justify-content:space-between;
