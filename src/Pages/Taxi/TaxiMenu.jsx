@@ -25,7 +25,7 @@ const TaxiMenu = () => {
         <input 
         style={{width:"200px", height:"46px", fontSize:"18px",}}
         type="text"
-        placeholder='지역, 가격 '
+        placeholder='지역, 월세, 평수 '
         value={keyword}
         onChange={handleChange}
         onKeyDown={hendleKeyDown}
@@ -34,9 +34,11 @@ const TaxiMenu = () => {
         <ul>
           {filterMenu.map((item) => (
             <li>
+              <img src={item.img} />
               <div>
-                <div style={{fontWeight:"700"}}>{item.distance}</div>
                 <div style={{fontWeight:"700"}}>{item.price}</div>
+                <div style={{fontSize:"13px"}}>{item.floorSpace}</div>
+                <div style={{fontSize:"10px"}}>{item.address}</div>
               </div>
             </li>
           ))}

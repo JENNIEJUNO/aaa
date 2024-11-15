@@ -84,6 +84,17 @@
 .taxiMenu > ul > li:last-child {
     border-bottom: none;
 }
+@media (max-width:500px){
+    .taxiMenu > ul{
+        width:100%;
+    }
+}
+.taxiMenu li > img{
+    width:140px;
+    height:100px;
+    margin-right:5px;
+    border-radius:10px;
+}
 .taxiMenu li > div{
     width:120px;
     height:100px;
