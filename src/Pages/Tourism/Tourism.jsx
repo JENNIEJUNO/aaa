@@ -7,7 +7,7 @@ const Tourism = () => {
     const [text, setText] = useState('관광을 소개하는 문장')
     const [goToMenu, setGoToMenu] = useState('메뉴로 이동 ->')
     const navigate = useNavigate()
-    const goToHomeMenu = () => {
+    const goToTourismMenu = () => {
         navigate("/TourismMenu")
     }
     const translatingMachine = (event) => {
@@ -31,15 +31,17 @@ const Tourism = () => {
         }
     }
   return (
-    <div className={styles.tourism}>
+    <div className={styles.tourism} style={{backgroundImage:"url(/tourism.png)"}}>
         <div className={styles.translation}>
             <img onClick={() => translatingMachine("Korea")} src="https://img.freepik.com/premium-vector/south-korea-flag_786274-375.jpg?semt=ais_hybrid"/>
             <img onClick={() => translatingMachine(country.Thailand.name)} src={country.Thailand.img}/>
             <img onClick={() => translatingMachine(country.Vietnam.name)} src={country.Vietnam.img}/>
             <img onClick={() => translatingMachine(country.Philippines.name)} src={country.Philippines.img}/>
         </div>
-        <p>{text}</p>
-        <div className={styles.menu} onClick={goToHomeMenu}>{goToMenu}</div>
+        <div className={styles.textBox}>
+            <p>{text}</p>
+            <div className={styles.menu} onClick={goToTourismMenu}>{goToMenu}</div>
+        </div>
     </div>
   )
 }

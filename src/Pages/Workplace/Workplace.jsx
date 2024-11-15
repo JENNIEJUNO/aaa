@@ -7,7 +7,7 @@ const Workplace = () => {
     const [text, setText] = useState('직장을 소개하는 문장')
     const [goToMenu, setGoToMenu] = useState('메뉴로 이동 ->')
     const navigate = useNavigate()
-    const goToHomeMenu = () => {
+    const goToWorkplaceMenu = () => {
         navigate("/WorkplaceMenu")
     }
     const translatingMachine = (event) => {
@@ -38,8 +38,10 @@ const Workplace = () => {
             <img onClick={() => translatingMachine(country.Vietnam.name)} src={country.Vietnam.img}/>
             <img onClick={() => translatingMachine(country.Philippines.name)} src={country.Philippines.img}/>
         </div>
-        <p>{text}</p>
-        <div className={styles.menu} onClick={goToHomeMenu}>{goToMenu}</div>
+        <div className={styles.textBox}>
+            <p>{text}</p>
+            <div className={styles.menu} onClick={goToWorkplaceMenu}>{goToMenu}</div>
+        </div>
     </div>
   )
 }

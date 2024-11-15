@@ -1,5 +1,7 @@
 .tourism{
-    background-color:skyblue;
+    background-size:100% 100%;
+    background-repeat:no-repeat;
+    background-position: center;
     height:100%;
     display:flex;
     flex-direction:column;
@@ -10,6 +12,12 @@
     position:relative;
     padding:10px;
     text-align: center;
+}
+.tourism .textBox{
+    padding:15px;
+    background-color:black;
+    color:white;
+    border-radius:10px;
 }
 .translation{
     padding:10px;

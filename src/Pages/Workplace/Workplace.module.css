@@ -13,6 +13,12 @@
     text-align: center;
     padding:10px;
 }
+.workplace .textBox{
+    padding:15px;
+    background-color:black;
+    color:white;
+    border-radius:10px;
+}
 .translation{
     padding:10px;
     position:absolute;
