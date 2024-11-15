@@ -34,11 +34,11 @@ const Homepage = () => {
             containerClass="carousel-container"
             responsive={responsive}
         >
-          <Qr/>
           <Home />
           <Taxi />
           <Tourism />
           <Workplace />
+          <Qr/>
         </Carousel>
   )
 }
