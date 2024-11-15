@@ -1,5 +1,7 @@
 .workplace{
-    background-color:pink;
+    background-size:cover;
+    background-repeat:no-repeat;
+    background-position: center;
     height:100%;
     display:flex;
     flex-direction:column;
@@ -8,8 +10,8 @@
     font-size:30px;
     font-weight:700;
     position:relative;
-    padding:10px;
     text-align: center;
+    padding:10px;
 }
 .translation{
     padding:10px;

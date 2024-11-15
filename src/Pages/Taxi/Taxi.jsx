@@ -1,14 +1,14 @@
 import React, { useState } from 'react'
 import styles from './Taxi.module.css'
 import { useNavigate } from 'react-router-dom'
-import { country } from './Country'
+import { country } from './Object'
 
 
 const Taxi = () => {
     const [text, setText] = useState('택시를 소개하는 문장')
     const [goToMenu, setGoToMenu] = useState('메뉴로 이동 ->')
     const navigate = useNavigate()
-    const goToHomeMenu = () => {
+    const goToTaxiMenu = () => {
         navigate("/TaxiMenu")
     }
     const translatingMachine = (event) => {
@@ -32,15 +32,17 @@ const Taxi = () => {
         }
     }
   return (
-    <div className={styles.taxi}>
+    <div className={styles.taxi} style={{backgroundImage:"url(/taxi.png)"}}>
         <div className={styles.translation}>
             <img onClick={() => translatingMachine("Korea")} src="https://img.freepik.com/premium-vector/south-korea-flag_786274-375.jpg?semt=ais_hybrid"/>
             <img onClick={() => translatingMachine(country.Thailand.name)} src={country.Thailand.img}/>
             <img onClick={() => translatingMachine(country.Vietnam.name)} src={country.Vietnam.img}/>
             <img onClick={() => translatingMachine(country.Philippines.name)} src={country.Philippines.img}/>
         </div>
-        <p>{text}</p>
-        <div className={styles.menu} onClick={goToHomeMenu}>{goToMenu}</div>
+        <div className={styles.textBox}>
+            <p>{text}</p>
+            <div className={styles.menu} onClick={goToTaxiMenu}>{goToMenu}</div>
+        </div>
     </div>
   )
 }

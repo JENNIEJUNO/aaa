@@ -6,7 +6,6 @@ import { country } from './Object'
 const Home = () => {
     const [text, setText] = useState('집을 소개하는 문장')
     const [goToMenu, setGoToMenu] = useState('메뉴로 이동 ->')
-    
     const navigate = useNavigate()
     const goToHomeMenu = () => {
         navigate("/HomeMenu")

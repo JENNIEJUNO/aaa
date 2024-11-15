@@ -31,7 +31,7 @@ const Workplace = () => {
         }
     }
   return (
-    <div className={styles.workplace}>
+    <div className={styles.workplace} style={{backgroundImage:"url(/office.png)"}}>
         <div className={styles.translation}>
             <img onClick={() => translatingMachine("Korea")} src="https://img.freepik.com/premium-vector/south-korea-flag_786274-375.jpg?semt=ais_hybrid"/>
             <img onClick={() => translatingMachine(country.Thailand.name)} src={country.Thailand.img}/>

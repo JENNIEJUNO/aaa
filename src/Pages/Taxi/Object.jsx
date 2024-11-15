@@ -18,3 +18,11 @@ export const country = {
         menuText:"Pumunta sa menu ->",
     }
 }
+
+export const menu = [
+    {
+        distance:"서울 -> 부산",
+        price:"1000원",
+        keyword:"서울 부산 1000"
+    }
+]
