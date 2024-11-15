@@ -8,20 +8,28 @@ const HomeMenu = () => {
   const handleChange = (event) => {
     setKeyword(event.target.value)
   }
-  const findToKeyword = () => {
-    if(keyword){
-      setFilterMenu(menu.filter(item => item.keyword.includes(keyword)))
+  const hendleKeyDown = (event) => {
+    if(event.key === 'Enter'){
+      if(keyword){
+        setFilterMenu(menu.filter(item => item.keyword.includes(keyword)))
+      }
+      else{
+        setFilterMenu(menu)
+      }
+      setKeyword('')
     }
-    else{
-      setFilterMenu(menu)
-    }
-    setKeyword('')
   }
   return (
     <div className={styles.homeMenu} style={{backgroundImage:"url(/room.png)"}}>
       <div className={styles.homeSearch}>
-        <input style={{width:"135px"}} type="text" placeholder='지역, 월세, 평수 ' value={keyword} onChange={(event) => handleChange(event)}/>
-        <button onClick={findToKeyword}>click</button>
+        <input 
+        style={{width:"150px"}}
+        type="text"
+        placeholder='지역, 월세, 평수 '
+        value={keyword}
+        onChange={handleChange}
+        onKeyDown={hendleKeyDown}
+        />
       </div>
         <ul>
           {filterMenu.map((item) => (
