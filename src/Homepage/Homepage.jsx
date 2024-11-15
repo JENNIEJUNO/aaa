@@ -36,8 +36,8 @@ const Homepage = () => {
         >
           <Home />
           <Taxi />
-          <Tourism />
           <Workplace />
+          <Tourism />
           <Qr/>
         </Carousel>
   )
