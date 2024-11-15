@@ -23,7 +23,7 @@ const HomeMenu = () => {
     <div className={styles.homeMenu} style={{backgroundImage:"url(/room.png)"}}>
       <div className={styles.homeSearch}>
         <input 
-        style={{width:"150px"}}
+        style={{width:"170px", height:"46px"}}
         type="text"
         placeholder='지역, 월세, 평수 '
         value={keyword}
