@@ -32,15 +32,17 @@ const Home = () => {
         }
     }
   return (
-    <div className={styles.home} style={{backgroundImage:"url(/homehouse.png)"}}>
+    <div className={styles.home} style={{backgroundImage:"url(/room.png)"}}>
         <div className={styles.translation}>
             <img onClick={() => translatingMachine("Korea")} src="https://img.freepik.com/premium-vector/south-korea-flag_786274-375.jpg?semt=ais_hybrid"/>
             <img onClick={() => translatingMachine(country.Thailand.name)} src={country.Thailand.img}/>
             <img onClick={() => translatingMachine(country.Vietnam.name)} src={country.Vietnam.img}/>
             <img onClick={() => translatingMachine(country.Philippines.name)} src={country.Philippines.img}/>
         </div>
-        <p>{text}</p>
-        <div className={styles.menu} onClick={goToHomeMenu}>{goToMenu}</div>
+        <div className={styles.textBox}>
+            <p>{text}</p>
+            <div className={styles.menu} onClick={goToHomeMenu}>{goToMenu}</div>
+        </div>
     </div>
   )
 }

@@ -13,6 +13,12 @@
     text-align: center;
     padding:10px;
 }
+.home .textBox{
+    padding:15px;
+    background-color:black;
+    color:white;
+    border-radius:10px;
+}
 .translation{
     padding:10px;
     position:absolute;
@@ -34,7 +40,9 @@
     border-bottom:1px solid blue;
 }
 .homeMenu{
-    background-color:green;
+    background-size:cover;
+    background-repeat:no-repeat;
+    background-position: center;
     height:100vh;
     display:flex;
     align-items:flex-end;
