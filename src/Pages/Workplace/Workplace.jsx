@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import styles from './Workplace.module.css'
 import { useNavigate } from 'react-router-dom'
-import { country } from './Country'
+import { country } from './Object'
 
 const Workplace = () => {
     const [text, setText] = useState('직장을 소개하는 문장')
