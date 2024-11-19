@@ -25,7 +25,7 @@ const HomeMenu = () => {
         <input 
         style={{width:"200px", height:"46px", fontSize:"18px",}}
         type="text"
-        placeholder='지역, 월세, 평수 '
+        placeholder='시, 구, 동, 월세, 평수 '
         value={keyword}
         onChange={handleChange}
         onKeyDown={hendleKeyDown}
